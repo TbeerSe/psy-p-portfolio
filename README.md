@@ -7,7 +7,7 @@
 
 ## 🔗 Демо
 
-**[Посмотреть на GitHub Pages](https://tbeerse.github.io/psy-p/)**
+**[Посмотреть на GitHub Pages](https://tbeerse.github.io/psy-p-portfolio/)**
 
 ## ✨ Возможности
 
