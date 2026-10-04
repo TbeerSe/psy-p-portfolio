@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Елена Морозова — психолог в Ярославле</title>
+  <meta
+    name="description"
+    content="Психолог Елена Морозова. Помогаю справиться с тревогой, выгоранием и отношениями. Консультации очно в Ярославле и онлайн."
+  >
+  <meta name="theme-color" content="#faf7f2">
+  <meta name="author" content="Елена Морозова">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Елена Морозова — психолог в Ярославле">
+  <meta property="og:description" content="Помогаю справиться с тревогой, выгоранием и отношениями. Консультации очно и онлайн.">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>"
+  >
+
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Leaflet -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!-- =========================================================
+       ШАПКА
+  ========================================================== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Елена Морозова — на главную">
+        Елена <span>Морозова</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#services">Запросы</a>
+        <a href="#pricing">Стоимость</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="header__cta" href="#contacts">
+        Записаться
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- =========================================================
+         1. ПЕРВЫЙ ЭКРАН
+    ========================================================== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__label">Психолог · Ярославль · Онлайн</p>
+
+          <h1>
+            Помогаю вернуть
+            <span>спокойствие и опору</span>
+          </h1>
+
+          <p class="hero__description">
+            Работаю с тревогой, выгоранием, отношениями и самооценкой.
+            Бережно, без осуждения и лишних терминов.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#contacts">
+              Записаться на консультацию
+            </a>
+
+            <a class="button button--ghost" href="#about">
+              Узнать обо мне
+            </a>
+          </div>
+
+          <ul class="hero__facts">
+            <li>
+              <strong>8 лет</strong>
+              <span>практики</span>
+            </li>
+            <li>
+              <strong>500+</strong>
+              <span>клиентов</span>
+            </li>
+            <li>
+              <strong>2 формата</strong>
+              <span>очно и онлайн</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__photo" aria-hidden="true">
+          <img
+            src="images/hero.jpg"
+            alt=""
+            width="600"
+            height="700"
+            fetchpriority="high"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         2. ОБО МНЕ
+    ========================================================== -->
+    <section class="about section" id="about">
+      <div class="container about__inner">
+        <div class="about__photo">
+          <img
+            src="images/about.jpg"
+            alt="Елена Морозова, психолог"
+            width="600"
+            height="700"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="about__content">
+          <p class="section-label">Обо мне</p>
+
+          <h2>Спокойный собеседник и профессиональный психолог</h2>
+
+          <p>
+            Меня зовут Елена. Уже больше восьми лет я помогаю людям
+            разбираться с тревогой, находить опору внутри себя и строить
+            здоровые отношения.
+          </p>
+
+          <p>
+            В работе опираюсь на доказательные подходы: КПТ, схема-терапию
+            и элементы ACT. Без мистики и обещаний «исцелить за один сеанс».
+          </p>
+
+          <ul class="about__education">
+            <li>
+              <strong>МГУ им. М. В. Ломоносова</strong> — клиническая психология
+            </li>
+            <li>
+              <strong>Институт КПТ</strong> — когнитивно-поведенческая терапия
+            </li>
+            <li>
+              <strong>Схема-терапия</strong> — продвинутый курс
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. С КАКИМИ ЗАПРОСАМИ РАБОТАЮ
+    ========================================================== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Запросы</p>
+          <h2>С чем я работаю</h2>
+          <p class="section-description">
+            Если не нашли свой запрос — напишите, обсудим индивидуально.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🌿</div>
+            <h3>Тревога и страхи</h3>
+            <p>Постоянное напряжение, панические атаки, навязчивые мысли.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🔥</div>
+            <h3>Выгорание</h3>
+            <p>Усталость от работы, потеря смысла, апатия и бессилие.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">💬</div>
+            <h3>Отношения</h3>
+            <p>Конфликты в паре, ревность, сложности с близостью и доверием.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🪞</div>
+            <h3>Самооценка</h3>
+            <p>Синдром самозванца, самокритика, чувство «я недостаточно хорош».</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🌱</div>
+            <h3>Кризисы и перемены</h3>
+            <p>Развод, потеря работы, переезд, потеря близких.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🧭</div>
+            <h3>Поиск себя</h3>
+            <p>Понимание своих желаний, целей и жизненного направления.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. ФОРМАТ И СТОИМОСТЬ
+    ========================================================== -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Формат и стоимость</p>
+          <h2>Как проходят консультации</h2>
+          <p class="section-description">
+            Первая встреча — знакомство. Мы обсуждаем запрос и решаем,
+            комфортно ли нам работать вместе.
+          </p>
+        </div>
+
+        <div class="pricing__grid">
+          <article class="price-card">
+            <h3>Онлайн</h3>
+            <p class="price-card__price">3 500 ₽<span>/ 60 мин</span></p>
+            <ul class="price-card__list">
+              <li>Zoom / WhatsApp / Telegram</li>
+              <li>Удобно из любого города</li>
+              <li>Гибкий график</li>
+            </ul>
+            <a class="button button--primary button--full" href="#contacts">
+              Записаться
+            </a>
+          </article>
+
+          <article class="price-card price-card--featured">
+            <span class="price-card__badge">Популярно</span>
+            <h3>Очно в Ярославле</h3>
+            <p class="price-card__price">4 000 ₽<span>/ 60 мин</span></p>
+            <ul class="price-card__list">
+              <li>Уютный кабинет в центре</li>
+              <li>Чай, вода, тишина</li>
+              <li>Безопасное пространство</li>
+            </ul>
+            <a class="button button--primary button--full" href="#contacts">
+              Записаться
+            </a>
+          </article>
+
+          <article class="price-card">
+            <h3>Парная</h3>
+            <p class="price-card__price">5 000 ₽<span>/ 90 мин</span></p>
+            <ul class="price-card__list">
+              <li>Для пар и супругов</li>
+              <li>Онлайн или очно</li>
+              <li>Помогаю услышать друг друга</li>
+            </ul>
+            <a class="button button--primary button--full" href="#contacts">
+              Записаться
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. ОТЗЫВЫ
+    ========================================================== -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Отзывы</p>
+          <h2>Что говорят клиенты</h2>
+        </div>
+
+        <div class="reviews__grid">
+          <article class="review-card">
+            <p class="review-card__text">
+              «Пришла с паническими атаками. За полгода работы они
+              почти исчезли. Елена очень бережная и внимательная.»
+            </p>
+            <p class="review-card__author">
+              <strong>Мария</strong>, 29 лет
+            </p>
+          </article>
+
+          <article class="review-card">
+            <p class="review-card__text">
+              «Долго не мог решиться. Сейчас жалею, что не пошёл
+              раньше. Помогла разобраться с выгоранием и вернуть
+              интерес к жизни.»
+            </p>
+            <p class="review-card__author">
+              <strong>Дмитрий</strong>, 35 лет
+            </p>
+          </article>
+
+          <article class="review-card">
+            <p class="review-card__text">
+              «Ходили на парные консультации. Научились говорить
+              без криков и обид. Спасибо большое.»
+            </p>
+            <p class="review-card__author">
+              <strong>Ольга и Сергей</strong>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. FAQ
+    ========================================================== -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Вопросы</p>
+          <h2>Часто спрашивают</h2>
+        </div>
+
+        <div class="faq__list">
+          <details class="faq-item">
+            <summary>Сколько нужно встреч?</summary>
+            <p>
+              Зависит от запроса. Иногда достаточно 5–7 консультаций,
+              иногда — дольше. Мы обсудим это на первой встрече.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Это конфиденциально?</summary>
+            <p>
+              Да. Всё, что говорится на сессии, остаётся между нами.
+              Исключения — только случаи угрозы жизни и здоровью.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Как проходит первая консультация?</summary>
+            <p>
+              Знакомимся, обсуждаем запрос, я задаю уточняющие вопросы
+              и предлагаю план работы. Длительность — 60 минут.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Что если не подойдём друг другу?</summary>
+            <p>
+              Это нормально. Я честно скажу, если вижу, что нужен
+              другой специалист или формат, и помогу с рекомендацией.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Как оплатить?</summary>
+            <p>
+              Переводом на карту до начала сессии. При отмене менее
+              чем за 24 часа оплата сохраняется.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Работаете ли вы с детьми?</summary>
+            <p>
+              С подростками от 14 лет — да. С детьми младшего возраста —
+              нет, рекомендую детского психолога.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. КОНТАКТЫ
+    ========================================================== -->
+    <section class="contacts section" id="contacts">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Контакты</p>
+          <h2>Записаться на консультацию</h2>
+          <p class="section-description">
+            Оставьте заявку — я свяжусь в течение дня и подберу
+            удобное время.
+          </p>
+        </div>
+
+        <div class="contacts__grid">
+          <!-- Форма -->
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-field">
+              <label for="contact-name">Ваше имя</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Например, Мария"
+                autocomplete="name"
+                minlength="2"
+                maxlength="60"
+                required
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="contact-contact">Телефон или мессенджер</label>
+              <input
+                type="text"
+                id="contact-contact"
+                name="contact"
+                placeholder="+7 (999) 123-45-67 или @username"
+                autocomplete="tel"
+                minlength="5"
+                maxlength="80"
+                required
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="contact-message">Что вас беспокоит?</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                placeholder="Пара предложений — этого достаточно"
+                rows="4"
+                maxlength="800"
+              ></textarea>
+            </div>
+
+            <button
+              class="button button--primary button--full"
+              type="submit"
+            >
+              Отправить заявку
+            </button>
+
+            <p
+              class="form-message"
+              id="form-message"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+
+          <!-- Контакты + карта -->
+          <div class="contacts__info">
+            <ul class="contacts__list">
+              <li>
+                <span class="contacts__icon" aria-hidden="true">📞</span>
+                <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+              </li>
+              <li>
+                <span class="contacts__icon" aria-hidden="true">✉️</span>
+                <a href="mailto:hello@example.com">hello@example.com</a>
+              </li>
+              <li>
+                <span class="contacts__icon" aria-hidden="true">💬</span>
+                <a href="https://t.me/username" target="_blank" rel="noopener">Telegram</a>
+              </li>
+              <li>
+                <span class="contacts__icon" aria-hidden="true">📍</span>
+                <span>Ярославль, ул. Примерная, 10</span>
+              </li>
+            </ul>
+
+            <div
+              id="map"
+              class="contacts__map"
+              role="region"
+              aria-label="Карта: Ярославль, ул. Примерная, 10"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       ПОДВАЛ
+  ========================================================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo" href="#top">
+        Елена <span>Морозова</span>
+      </a>
+
+      <p>© 2026 · Психолог Елена Морозова · Ярославль</p>
+    </div>
+  </footer>
+
+  <!-- Кнопка «Наверх» -->
+  <button
+    class="scroll-top"
+    id="scroll-top"
+    type="button"
+    aria-label="Наверх"
+    hidden
+  >↑</button>
+
+  <!-- Leaflet -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+
+  <!-- Скрипты -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

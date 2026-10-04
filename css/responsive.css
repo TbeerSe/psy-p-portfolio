@@ -1,0 +1,320 @@
+/* =========================================================
+   RESPONSIVE — финальные медиа-запросы
+   Основные брейкпоинты уже в layout.css и components.css.
+   Здесь — добьём края: очень маленькие экраны, планшеты,
+   крупный текст, ландшафт телефона.
+   ========================================================= */
+
+/* =========================================================
+   ПЛАНШЕТ (портрет)
+   ========================================================= */
+
+@media (max-width: 820px) {
+  .container {
+    width: min(100% - 40px, var(--container));
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .hero {
+    padding: 56px 0 72px;
+  }
+
+  .hero__inner {
+    gap: 40px;
+  }
+
+  .about__inner {
+    gap: 40px;
+  }
+
+  .section-heading {
+    margin-bottom: 36px;
+  }
+
+  .contacts__grid {
+    gap: 32px;
+  }
+}
+
+/* =========================================================
+   МАЛЕНЬКИЙ ПЛАНШЕТ / КРУПНЫЙ ТЕЛЕФОН
+   ========================================================= */
+
+@media (max-width: 520px) {
+  .container {
+    width: min(100% - 32px, var(--container));
+  }
+
+  .header__inner {
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .header__cta {
+    min-height: 38px;
+    padding: 0 14px;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 34px;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .section-label {
+    font-size: 12px;
+  }
+
+  .section-description {
+    font-size: 15px;
+  }
+
+  .hero__label {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+  }
+
+  .hero__photo {
+    max-width: 100%;
+    aspect-ratio: 4 / 4;
+  }
+
+  .hero__facts {
+    gap: 18px 24px;
+  }
+
+  .hero__facts strong {
+    font-size: 20px;
+  }
+
+  .hero__facts span {
+    font-size: 12px;
+  }
+
+  .service-card__icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 16px;
+    font-size: 22px;
+  }
+
+  .service-card h3 {
+    font-size: 17px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+
+  .price-card__price {
+    font-size: 30px;
+  }
+
+  .price-card__price span {
+    font-size: 13px;
+  }
+
+  .price-card__list li {
+    font-size: 14px;
+  }
+
+  .review-card::before {
+    font-size: 40px;
+  }
+
+  .review-card__text {
+    font-size: 15px;
+  }
+
+  .faq-item summary {
+    font-size: 15px;
+    padding: 16px 18px;
+  }
+
+  .faq-item p {
+    padding: 0 18px 18px;
+    font-size: 14px;
+  }
+
+  .contact-form {
+    padding: 26px 20px;
+    border-radius: var(--radius-md);
+  }
+
+  .form-field input,
+  .form-field textarea {
+    padding: 13px 15px;
+    font-size: 15px;
+  }
+
+  .contacts__map {
+    height: 240px;
+    border-radius: var(--radius-md);
+  }
+
+  .footer {
+    padding: 24px 0;
+  }
+
+  .footer__inner {
+    gap: 14px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+}
+
+/* =========================================================
+   ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ
+   ========================================================= */
+
+@media (max-width: 360px) {
+  .container {
+    width: min(100% - 24px, var(--container));
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  .logo {
+    font-size: 15px;
+  }
+
+  .header__cta {
+    padding: 0 12px;
+    font-size: 11px;
+  }
+
+  .hero__facts {
+    gap: 14px 18px;
+  }
+
+  .hero__facts strong {
+    font-size: 18px;
+  }
+
+  .price-card__price {
+    font-size: 26px;
+  }
+
+  .scroll-top {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+}
+
+/* =========================================================
+   ЛАНДШАФТ ТЕЛЕФОНА (широкая, но низкая область)
+   ========================================================= */
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .header {
+    position: static;
+  }
+
+  .hero {
+    padding: 32px 0 40px;
+  }
+
+  .hero__photo,
+  .about__photo {
+    max-width: 320px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+}
+
+/* =========================================================
+   КРУПНЫЙ ШРИФТ В СИСТЕМЕ (для слабовидящих)
+   ========================================================= */
+
+@media (min-resolution: 1.5dppx) and (min-width: 900px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+/* =========================================================
+   HOVER: ТОЛЬКО ТАМ, ГДЕ ЕСТЬ НАСТОЯЩАЯ МЫШЬ
+   (чтобы на тач-устройствах карточки не «залипали»)
+   ========================================================= */
+
+@media (hover: none) {
+  .service-card:hover,
+  .price-card:hover,
+  .review-card:hover {
+    transform: none;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .contacts__list li:hover {
+    transform: none;
+    border-color: var(--border);
+  }
+
+  .button--primary:hover,
+  .button--ghost:hover,
+  .header__cta:hover,
+  .scroll-top:hover {
+    transform: none;
+  }
+
+  .nav a::after {
+    display: none;
+  }
+}
+
+/* =========================================================
+   ПЕЧАТЬ (на случай, если кто-то решит распечатать визитку)
+   ========================================================= */
+
+@media print {
+  .header,
+  .footer,
+  .scroll-top,
+  .contact-form,
+  .contacts__map,
+  .hero__actions {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .section {
+    padding: 16px 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
