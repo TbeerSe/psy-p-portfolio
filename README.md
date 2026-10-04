@@ -2,7 +2,7 @@
 
 Одностраничный сайт-визитка психолога. Адаптивная вёрстка, форма заявки через Web3Forms, интерактивная карта Leaflet, FAQ-аккордеон, базовое SEO.
 
-[![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-blue)](https://tbeerse.github.io/psy-p/)
+[![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-blue)](https://tbeerse.github.io/psy-p-portfolio/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 ## 🔗 Демо
